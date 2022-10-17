@@ -13,7 +13,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 		Routing.RegisterRoute("newpage", typeof(NewPage1));
-		Routing.RegisterRoute(nameof();
+		Routing.RegisterRoute(nameof(Frame2), typeof(Frame2));
 		return builder.Build();
 	}
 }

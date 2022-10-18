@@ -8,6 +8,18 @@
         Opacity="0.4"
         Radius="14"
         Offset="0,20" />
+    <Shadow
+        x:Key="YellowButtonShadow"
+        Brush="#F1E0B8"
+        Opacity="0.4"
+        Radius="14"
+        Offset="0,20" />
+    <Shadow
+        x:Key="dateFrameShadow"
+        Brush="Black"
+        Opacity="0.4"
+        Radius="4"
+        Offset="0,4" />
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>

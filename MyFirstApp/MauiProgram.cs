@@ -14,6 +14,8 @@ public static class MauiProgram
 			});
 		Routing.RegisterRoute("newpage", typeof(NewPage1));
 		Routing.RegisterRoute(nameof(Frame2), typeof(Frame2));
+		Routing.RegisterRoute(nameof(SchedulePage), typeof(SchedulePage));
+		Routing.RegisterRoute(nameof(Frame4), typeof(Frame4));
 		return builder.Build();
 	}
 }

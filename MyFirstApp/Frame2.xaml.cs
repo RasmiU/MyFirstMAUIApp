@@ -6,4 +6,9 @@ public partial class Frame2 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void ScheduleButton_Clicked(object sender, EventArgs e)
+	{
+		Shell.Current.GoToAsync(nameof(SchedulePage));
+	}
 }

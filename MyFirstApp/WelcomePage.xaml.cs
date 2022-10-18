@@ -10,6 +10,6 @@ public partial class WelcomePage : ContentPage
 
 	private void GetStartedButton_Clicked(object sender, EventArgs e)
 	{
-		Shell.Current.GoToAsync();
+		Shell.Current.GoToAsync($"/{nameof(Frame2)}");
 	}
 }

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.SchedulePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SchedulePage">
+    <VerticalStackLayout Background="white">
+        <Grid Margin="30,40,30,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                Source="backarrow.svg" />
+            <Image
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Source="shape.svg" />
+        </Grid>
+        <Grid Margin="30,40,30,0" ColumnDefinitions="*,*">
+            <Label
+                Grid.Column="0"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Start"
+                Text="Today"
+                TextColor="Black" />
+            <Label
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Text="Create New"
+                TextColor="#ED1942" />
+        </Grid>
+        <Frame
+            Margin="30,40,30,0"
+            Padding="0"
+            Background="Black"
+            BorderColor="Black"
+            CornerRadius="20">
+            <StackLayout>
+                <Frame
+                    Margin="0"
+                    Background="#F04F5C"
+                    BorderColor="#F04F5C"
+                    CornerRadius="20">
+                    <StackLayout>
+                        <Label Text="Ongoing" />
+                        <Label
+                            Margin="0,10,0,30"
+                            FontAttributes="Bold"
+                            FontSize="Subtitle"
+                            Text="Meetup 2k19" />
+                    </StackLayout>
+                </Frame>
+                <StackLayout Padding="30">
+                    <Grid ColumnDefinitions="Auto,Auto,*">
+                        <Image
+                            Grid.Column="0"
+                            HorizontalOptions="Start"
+                            Source="clock.svg" />
+                        <Label
+                            Grid.Column="1"
+                            Margin="10,0,0,0"
+                            HorizontalOptions="Start"
+                            Text="03:30 - 05:25" />
+                        <Image
+                            Grid.Column="2"
+                            HorizontalOptions="End"
+                            Source="plus.svg" />
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Grid Margin="40,40,40,0" ColumnDefinitions="*,*">
+            <Label
+                Grid.Column="0"
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                HorizontalOptions="Start"
+                Text="This week"
+                TextColor="Black" />
+            <Image
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Source="icon1.svg" />
+        </Grid>
+        <Label
+            Margin="40,10,0,0"
+            FontAttributes="Bold"
+            Text="NOV"
+            TextColor="#DA2C41" />
+        <Grid Margin="30,10,0,0" ColumnDefinitions="Auto,*">
+            <Frame
+                Grid.Column="0"
+                Padding="5"
+                BorderColor="#979797"
+                Shadow="{StaticResource dateFrameShadow}">
+
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text="15"
+                        TextColor="Black" />
+                    <Label
+                        Grid.Column="1"
+                        Margin="2,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="Micro"
+                        HorizontalOptions="Start"
+                        Text="SAT"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+
+                </Grid>
+            </Frame>
+            <Frame Grid.Column="1" BorderColor="Transparent" />
+        </Grid>
+        <Border
+            Margin="30,0,30,0"
+            Background="White"
+            Stroke="#B8B2B3"
+            StrokeDashArray="0.0 6.0 0.0"
+            StrokeThickness="0">
+            <Grid ColumnDefinitions="*,Auto">
+                <Image
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    Source="line.svg"
+                    VerticalOptions="Fill" />
+                <VerticalStackLayout Grid.Column="1" Background="White">
+                    <Frame Background="#FFC2BD" BorderColor="Transparent">
+                        <VerticalStackLayout>
+                            <Grid ColumnDefinitions="*,*">
+                                <Label
+                                    Grid.Column="0"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Start"
+                                    Text="C-meeting"
+                                    TextColor="Black" />
+
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalOptions="End"
+                                    Source="ppic1.svg" />
+                            </Grid>
+                            <Grid Margin="0,10,0,0" ColumnDefinitions="*,*">
+                                <Label
+                                    Grid.Column="0"
+                                    FontSize="Micro"
+                                    HorizontalOptions="Start"
+                                    Text="03:30 - 05:25"
+                                    TextColor="#7E6E6C" />
+                                <Label
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    FontSize="Micro"
+                                    HorizontalOptions="End"
+                                    Text="1h 25min"
+                                    TextColor="#E73626" />
+                            </Grid>
+                        </VerticalStackLayout>
+
+                    </Frame>
+                    <Frame
+                        Margin="0,10,0,0"
+                        Background="#D7D4D4"
+                        BorderColor="Transparent">
+                        <VerticalStackLayout>
+                            <Grid ColumnDefinitions="*,*">
+                                <Label
+                                    Grid.Column="0"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Start"
+                                    Text="Omnego inc"
+                                    TextColor="Black" />
+
+                                <Image
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalOptions="End"
+                                    Source="ppic2.svg" />
+                            </Grid>
+                            <Grid Margin="0,10,0,0" ColumnDefinitions="*,*">
+                                <Label
+                                    Grid.Column="0"
+                                    FontSize="Micro"
+                                    HorizontalOptions="Start"
+                                    Text="06:30 - 08:00"
+                                    TextColor="#7E6E6C" />
+                                <Label
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    FontSize="Micro"
+                                    HorizontalOptions="End"
+                                    Text="1h 30min"
+                                    TextColor="#E73626" />
+                            </Grid>
+                        </VerticalStackLayout>
+
+                    </Frame>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+        <Button
+            Margin="30,5,30,0"
+            Background="#F1E0B8"
+            BorderWidth="0"
+            Clicked="Button_Clicked"
+            FontSize="Micro"
+            HorizontalOptions="End"
+            Shadow="{StaticResource YellowButtonShadow}"
+            Text="Best Books"
+            TextColor="Black"
+            VerticalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

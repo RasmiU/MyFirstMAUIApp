@@ -49,15 +49,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\backarrow.svg" />
+	  <None Remove="Resources\Images\Clock.svg" />
+	  <None Remove="Resources\Images\efriend.svg" />
+	  <None Remove="Resources\Images\icon1.svg" />
+	  <None Remove="Resources\Images\Line.svg" />
 	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\lowerpart.svg" />
 	  <None Remove="Resources\Images\manwithfootball.svg" />
+	  <None Remove="Resources\Images\middlepart.svg" />
+	  <None Remove="Resources\Images\Plus.svg" />
+	  <None Remove="Resources\Images\ppic.svg" />
+	  <None Remove="Resources\Images\ppic1.svg" />
+	  <None Remove="Resources\Images\ppic2.svg" />
+	  <None Remove="Resources\Images\Search.svg" />
+	  <None Remove="Resources\Images\Shape.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Frame2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Frame4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SchedulePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="WelcomePage.xaml">

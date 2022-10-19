@@ -49,7 +49,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Ai.svg" />
 	  <None Remove="Resources\Images\backarrow.svg" />
+	  <None Remove="Resources\Images\Bitmap.svg" />
+	  <None Remove="Resources\Images\bitmap1.svg" />
+	  <None Remove="Resources\Images\bitmap2.svg" />
+	  <None Remove="Resources\Images\bitmap3.svg" />
+	  <None Remove="Resources\Images\bitmap4.svg" />
+	  <None Remove="Resources\Images\blog.svg" />
+	  <None Remove="Resources\Images\book.svg" />
+	  <None Remove="Resources\Images\bostonpubliclibrary.jpg" />
 	  <None Remove="Resources\Images\Clock.svg" />
 	  <None Remove="Resources\Images\efriend.svg" />
 	  <None Remove="Resources\Images\icon1.svg" />
@@ -57,13 +66,17 @@
 	  <None Remove="Resources\Images\logo.svg" />
 	  <None Remove="Resources\Images\lowerpart.svg" />
 	  <None Remove="Resources\Images\manwithfootball.svg" />
+	  <None Remove="Resources\Images\Menu.svg" />
 	  <None Remove="Resources\Images\middlepart.svg" />
+	  <None Remove="Resources\Images\Notification.svg" />
 	  <None Remove="Resources\Images\Plus.svg" />
 	  <None Remove="Resources\Images\ppic.svg" />
 	  <None Remove="Resources\Images\ppic1.svg" />
 	  <None Remove="Resources\Images\ppic2.svg" />
 	  <None Remove="Resources\Images\Search.svg" />
+	  <None Remove="Resources\Images\searchicon.svg" />
 	  <None Remove="Resources\Images\Shape.svg" />
+	  <None Remove="Resources\Images\video.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,6 +84,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Frame4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Frame5.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="NewPage1.xaml">

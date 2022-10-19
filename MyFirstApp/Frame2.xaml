@@ -42,7 +42,7 @@
             Source="middlepart.svg"
             VerticalOptions="Center" />
         <Image
-            Margin="0,40,0,0"
+            Margin="40,80,40,0"
             HorizontalOptions="Center"
             Source="lowerpart.svg"
             VerticalOptions="End" />

@@ -3,6 +3,12 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <Shadow
+        x:Key="WhiteShadow"
+        Brush="Black"
+        Opacity="0.1"
+        Radius="14"
+        Offset="20,20" />
+    <Shadow
         x:Key="MainShadow"
         Brush="#C72819"
         Opacity="0.4"

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Frame5"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Frame5">
+    <VerticalStackLayout Background="White">
+        <Image
+            Margin="30,50,0,0"
+            HorizontalOptions="Start"
+            Source="backarrow.svg" />
+        <Grid Margin="30" ColumnDefinitions="Auto, Auto, *">
+            <Image
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                Shadow="{StaticResource WhiteShadow}"
+                Source="bitmap.svg" />
+            <VerticalStackLayout
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HorizontalOptions="Start">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    Text="Genesis Story"
+                    TextColor="Black" />
+                <Label
+                    HorizontalOptions="Start"
+                    Text="Justin Jackson"
+                    TextColor="#9898A5" />
+            </VerticalStackLayout>
+            <Label
+                Grid.Column="2"
+                FontAttributes="Bold"
+                HorizontalOptions="End"
+                Text="1 M"
+                TextColor="#282828"
+                VerticalOptions="Center" />
+        </Grid>
+        <Image
+            Margin="30,0,30,0"
+            HorizontalOptions="CenterAndExpand"
+            Source="ai.svg" />
+        <Label
+            Margin="30,30,0,0"
+            FontAttributes="Bold"
+            FontSize="Large"
+            Text="Hillsdale College"
+            TextColor="Black" />
+        <Label
+            Margin="30,0,0,0"
+            FontSize="Small"
+            Text="Adventure, Family"
+            TextColor="Gray" />
+        <Border
+            Margin="10,20,10,0"
+            Padding="20"
+            Background="White"
+            Shadow="{StaticResource WhiteShadow}"
+            Stroke="White">
+            <Grid ColumnDefinitions="*,*">
+                <Label
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Text="43.9k review"
+                    TextColor="Black" />
+                <Label
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    HorizontalOptions="End"
+                    Text="2019.1m ago"
+                    TextColor="Black" />
+            </Grid>
+        </Border>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <VerticalStackLayout Margin="30">
+                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." TextColor="Black" />
+                <Label
+                    FontAttributes="Bold"
+                    Text="The standard Lorem Ipsum passage, used since the 1500s"
+                    TextColor="Black" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

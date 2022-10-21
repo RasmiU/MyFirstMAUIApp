@@ -9,6 +9,12 @@
         Radius="14"
         Offset="20,20" />
     <Shadow
+        x:Key="PurpleShadow"
+        Brush="#9A1663"
+        Opacity="0.1"
+        Radius="14"
+        Offset="20,20" />
+    <Shadow
         x:Key="MainShadow"
         Brush="#C72819"
         Opacity="0.4"

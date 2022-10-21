@@ -73,14 +73,39 @@
                     TextColor="Black" />
             </Grid>
         </Border>
-        <ScrollView VerticalOptions="FillAndExpand">
-            <VerticalStackLayout Margin="30">
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." TextColor="Black" />
+
+        <Label
+            Margin="30,30,30,0"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            TextColor="Gray" />
+        <Border
+            Margin="10,20,10,0"
+            Padding="10"
+            Background="White"
+            Shadow="{StaticResource WhiteShadow}"
+            Stroke="White">
+            <Grid ColumnDefinitions="Auto,Auto,*">
+                <Image
+                    Grid.Column="0"
+                    Margin="0,0,10,0"
+                    HorizontalOptions="Start"
+                    Source="ppic1.svg"
+                    VerticalOptions="Center" />
                 <Label
-                    FontAttributes="Bold"
-                    Text="The standard Lorem Ipsum passage, used since the 1500s"
-                    TextColor="Black" />
-            </VerticalStackLayout>
-        </ScrollView>
+                    Grid.Column="1"
+                    HorizontalOptions="Start"
+                    Text="himansur@gmail.com"
+                    TextColor="Gray"
+                    VerticalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Background="blue"
+                    Clicked="Button_Clicked"
+                    HorizontalOptions="End"
+                    Text="Invite"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>

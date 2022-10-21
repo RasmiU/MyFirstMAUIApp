@@ -33,6 +33,7 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\Images\logo.png" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -49,6 +50,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\activety.svg" />
 	  <None Remove="Resources\Images\Ai.svg" />
 	  <None Remove="Resources\Images\backarrow.svg" />
 	  <None Remove="Resources\Images\Bitmap.svg" />
@@ -60,21 +66,29 @@
 	  <None Remove="Resources\Images\book.svg" />
 	  <None Remove="Resources\Images\bostonpubliclibrary.jpg" />
 	  <None Remove="Resources\Images\Clock.svg" />
+	  <None Remove="Resources\Images\combinedshape.svg" />
 	  <None Remove="Resources\Images\efriend.svg" />
 	  <None Remove="Resources\Images\icon1.svg" />
 	  <None Remove="Resources\Images\Line.svg" />
-	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\lowerpart.svg" />
 	  <None Remove="Resources\Images\manwithfootball.svg" />
 	  <None Remove="Resources\Images\Menu.svg" />
 	  <None Remove="Resources\Images\middlepart.svg" />
 	  <None Remove="Resources\Images\Notification.svg" />
+	  <None Remove="Resources\Images\notificationred.svg" />
+	  <None Remove="Resources\Images\object1.svg" />
+	  <None Remove="Resources\Images\object2.svg" />
+	  <None Remove="Resources\Images\object3.svg" />
 	  <None Remove="Resources\Images\Plus.svg" />
 	  <None Remove="Resources\Images\ppic.svg" />
 	  <None Remove="Resources\Images\ppic1.svg" />
 	  <None Remove="Resources\Images\ppic2.svg" />
+	  <None Remove="Resources\Images\profile.svg" />
 	  <None Remove="Resources\Images\Search.svg" />
 	  <None Remove="Resources\Images\searchicon.svg" />
+	  <None Remove="Resources\Images\searchiconinsidecircle.svg" />
+	  <None Remove="Resources\Images\settings.svg" />
 	  <None Remove="Resources\Images\Shape.svg" />
 	  <None Remove="Resources\Images\video.svg" />
 	</ItemGroup>
@@ -87,6 +101,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Frame5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Frame6.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Frame7.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Frame8.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="NewPage1.xaml">

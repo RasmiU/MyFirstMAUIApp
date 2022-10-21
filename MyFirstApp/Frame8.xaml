@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Frame8"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:rem="clr-namespace:MyFirstApp"
+    Title="Frame8">
+
+    <Grid>
+        <CollectionView x:Name="MainCV" x:DataType="rem:Reminder">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" TextColor="Black" />
+                            <Label Text="{Binding Description}" TextColor="Black" />
+                            <Label Text="{Binding Time}" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

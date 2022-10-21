@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Frame6"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Frame6">
+
+    <ScrollView Background="White">
+        <VerticalStackLayout Margin="20">
+            <Grid ColumnDefinitions="Auto,*">
+                <Border
+                    Margin="0,20,0,0"
+                    Padding="5"
+                    Background="#F9F9F9"
+                    Stroke="#F9F9F9"
+                    StrokeShape="RoundRectangle 10,10,10,10">
+                    <VerticalStackLayout Grid.Column="0" HorizontalOptions="Start">
+                        <Image
+                            Margin="5,20,20,20"
+                            HorizontalOptions="Center"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Source="menu.svg" />
+
+                        <Image
+                            Margin="0,30,0,0"
+                            HorizontalOptions="Center"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Source="ppic.svg" />
+                        <Image
+                            Margin="0,10,0,0"
+                            HorizontalOptions="Center"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Source="ppic.svg" />
+                        <Image
+                            Margin="0,10,0,0"
+                            HorizontalOptions="Center"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Source="ppic.svg" />
+                        <Image
+                            Margin="0,70,0,0"
+                            HorizontalOptions="Center"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Source="icon1.svg" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <VerticalStackLayout Grid.Column="1" Margin="20,0,10,0">
+                    <Image HorizontalOptions="End" Source="notification.svg" />
+                    <Border
+                        Padding="10"
+                        Background="#9A1663"
+                        Shadow="{StaticResource WhiteShadow}"
+                        Stroke="#E26868"
+                        StrokeShape="RoundRectangle 10,10,10,10">
+                        <Grid ColumnDefinitions="*,*,*">
+                            <Button
+                                Grid.Column="0"
+                                Background="#EDEDED"
+                                HorizontalOptions="Start"
+                                Shadow="{StaticResource WhiteShadow}"
+                                VerticalOptions="Center" />
+                            <Frame
+                                Grid.Column="1"
+                                Padding="10"
+                                Background="#9A1663"
+                                BorderColor="Transparent"
+                                VerticalOptions="Center">
+                                <VerticalStackLayout>
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontSize="Small"
+                                        Text="Morning"
+                                        TextColor="White"
+                                        VerticalOptions="Center" />
+                                    <Label
+                                        FontSize="Micro"
+                                        Text="Lunji Pills"
+                                        TextColor="White" />
+                                </VerticalStackLayout>
+                            </Frame>
+
+                            <VerticalStackLayout Grid.Column="2">
+                                <Button
+                                    Margin="0,0,0,10"
+                                    Background="White"
+                                    HorizontalOptions="End"
+                                    Shadow="{StaticResource WhiteShadow}"
+                                    VerticalOptions="Center" />
+                                <Button
+                                    Background="#FF8787"
+                                    HorizontalOptions="End"
+                                    Shadow="{StaticResource PurpleShadow}"
+                                    VerticalOptions="Center" />
+                            </VerticalStackLayout>
+
+
+                        </Grid>
+                    </Border>
+                    <Border
+                        Padding="10"
+                        Background="White"
+                        Shadow="{StaticResource PurpleShadow}"
+                        Stroke="White"
+                        StrokeShape="RoundRectangle 10,10,10,10">
+                        <Grid ColumnDefinitions="*,*,*">
+                            <Button
+                                Grid.Column="0"
+                                Background="#E26868"
+                                HorizontalOptions="Start"
+                                Shadow="{StaticResource WhiteShadow}"
+                                VerticalOptions="Center" />
+                            <VerticalStackLayout
+                                Grid.Column="1"
+                                Padding="10"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    Text="Evening"
+                                    TextColor="Black"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="Micro"
+                                    Text="Fever"
+                                    TextColor="Black" />
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Column="2">
+                                <Button
+                                    Margin="0,0,0,10"
+                                    Background="#9A1663"
+                                    HorizontalOptions="End"
+                                    Shadow="{StaticResource WhiteShadow}"
+                                    VerticalOptions="Center" />
+                                <Button
+                                    Background="White"
+                                    HorizontalOptions="End"
+                                    Shadow="{StaticResource MainShadow}"
+                                    VerticalOptions="Center" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                    <Grid Margin="0,30,0,0" ColumnDefinitions="*,*">
+                        <Border
+                            Grid.Column="0"
+                            Margin="10,10,0,0"
+                            Padding="10"
+                            Background="#E26868"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Stroke="#E26868"
+                            StrokeShape="RoundRectangle 10,10,10,10">
+                            <VerticalStackLayout HorizontalOptions="Center">
+                                <Label FontSize="Small" Text="Doctor" />
+                                <Label FontSize="Micro" Text="23.09" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <Border
+                            Grid.Column="1"
+                            Margin="10,10,0,0"
+                            Padding="10"
+                            Background="#F8C4B4"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Stroke="#F8C4B4"
+                            StrokeShape="RoundRectangle 10,10,10,10">
+                            <VerticalStackLayout HorizontalOptions="Center">
+                                <Label FontSize="Small" Text="Yoga" />
+                                <Label FontSize="Micro" Text="27.09" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </Grid>
+                </VerticalStackLayout>
+            </Grid>
+            <Grid Margin="10,50,10,0" ColumnDefinitions="*,*">
+                <Label
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    HorizontalOptions="Start"
+                    Text="Store"
+                    TextColor="Black" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    Text="Filter"
+                    TextColor="Gray" />
+            </Grid>
+            <ScrollView Margin="10,20,10,0" Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Button
+                        Margin="5"
+                        Background="#00C1D4"
+                        Text="Medicine"
+                        TextColor="White" />
+                    <Button
+                        Margin="5"
+                        Background="#EEEEEE"
+                        Text="All"
+                        TextColor="Gray" />
+                    <Button
+                        Margin="5"
+                        Background="#7F5283"
+                        Text="Doctor"
+                        TextColor="White" />
+                    <Button
+                        Margin="5"
+                        Background="#EEEEEE"
+                        Text="Hospital"
+                        TextColor="Gray" />
+                    <Button
+                        Margin="5"
+                        Background="#E26868"
+                        Text="Nurse"
+                        TextColor="White" />
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <ScrollView Margin="10,10,10,0" Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Button
+                        Margin="5"
+                        Background="#00C1D4"
+                        Text="Yoga"
+                        TextColor="White" />
+                    <Button
+                        Margin="5"
+                        Background="#EEEEEE"
+                        Text="All"
+                        TextColor="Gray" />
+                    <Button
+                        Margin="5"
+                        Background="#7F5283"
+                        Text="Instructor"
+                        TextColor="White" />
+                    <Button
+                        Margin="5"
+                        Background="#EEEEEE"
+                        Text="Yoga Centre"
+                        TextColor="Gray" />
+                    <Button
+                        Margin="5"
+                        Background="#E26868"
+                        Text="Schedule"
+                        TextColor="White" />
+                </HorizontalStackLayout>
+            </ScrollView>
+            <Label
+                Margin="30,30,30,0"
+                Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                TextColor="Gray" />
+            <Border
+                Margin="0,20,0,0"
+                Padding="10,20,10,20"
+                Background="Black"
+                Stroke="Black"
+                StrokeShape="RoundRectangle 10,10,10,10">
+                <Grid ColumnDefinitions="Auto,*,Auto,Auto">
+                    <Image
+                        Grid.Column="0"
+                        Margin="10"
+                        HorizontalOptions="Start"
+                        Source="ppic.svg" />
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Margin="10"
+                        HorizontalOptions="Start">
+                        <Label FontSize="Medium" Text="H.Banusi" />
+                        <Button
+                            Margin="0,5,0,0"
+                            Clicked="Button_Clicked_1"
+                            FontAttributes="Bold"
+                            FontSize="Micro"
+                            Shadow="{StaticResource WhiteShadow}"
+                            Text="Next Frame"
+                            TextColor="Black" />
+                    </VerticalStackLayout>
+                    <Image
+                        Grid.Column="2"
+                        Margin="10"
+                        HorizontalOptions="End"
+                        Source="ppic.svg" />
+                    <Image
+                        Grid.Column="3"
+                        Margin="10"
+                        HorizontalOptions="End"
+                        Source="ppic.svg" />
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

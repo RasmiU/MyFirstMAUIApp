@@ -61,14 +61,19 @@
                 Grid.Column="0"
                 Margin="20,0,20,0"
                 HorizontalOptions="Start">
-                <Image
+                <Label
                     Grid.Row="0"
                     Margin="0,20,0,20"
-                    Source="video.svg" />
-                <Image
+                    Rotation="-90"
+                    Text="Video"
+                    TextColor="Black" />
+                <Label
                     Grid.Row="1"
                     Margin="0,20,0,20"
-                    Source="book.svg" />
+                    Rotation="-90"
+                    Text="Books"
+                    TextColor="Black" />
+
             </VerticalStackLayout>
             <VerticalStackLayout Grid.Column="1" HorizontalOptions="End">
                 <Frame Background="#F1F1F9" BorderColor="Transparent">

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Frame7"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Frame7">
+
+    <StackLayout Background="White" Orientation="Vertical">
+        <Image
+            Margin="30,40,0,0"
+            HorizontalOptions="Start"
+            Source="backarrow.svg" />
+        <Label
+            Margin="30,50,0,0"
+            FontSize="Large"
+            Text="Tracking with"
+            TextColor="Black" />
+        <Label
+            Margin="30,0,0,0"
+            FontAttributes="Bold"
+            FontSize="Large"
+            Text="Gintaria"
+            TextColor="Black" />
+        <Label
+            Margin="30,50,0,0"
+            FontAttributes="Bold"
+            FontSize="Small"
+            Text="Health act"
+            TextColor="Gray" />
+        <Grid Margin="30,10,30,0" ColumnDefinitions="*,*,Auto">
+            <BoxView
+                Grid.Column="0"
+                HeightRequest="50"
+                HorizontalOptions="Fill"
+                Color="#94B49F" />
+            <BoxView
+                Grid.Column="1"
+                HeightRequest="50"
+                HorizontalOptions="Fill"
+                Color="#ECB390" />
+            <Label
+                Grid.Column="2"
+                Margin="20,0,0,0"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="End"
+                Text="54%"
+                TextColor="Black"
+                VerticalOptions="Center" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
